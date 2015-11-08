@@ -1,1 +1,5 @@
 Name so far: SecretMorteChai
+
+Flask App, + MongoDB
+
+Natural Language Processing for making pairs?
