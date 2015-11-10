@@ -9,7 +9,7 @@ def MongoTest():
     db['dataset']                           # or like this! MAGIC!
     
     coll = db.dataset                       # assign the dataset collection to coll
-    coll = db.['dataset']                   # or type this! MAGIC!
+    coll = db['dataset']                   # or type this! MAGIC!
 
-if __NAME__ is "__MAIN__":
+if __name__ is "__MAIN__":
     app.MongoTest()
