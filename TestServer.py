@@ -1,4 +1,6 @@
 from flask import Flask, render_template #import library containing everything we need, now WORKS!
+import mongo
+
 app = Flask(__name__) #idk... just do this to make an application I think?
 
 
