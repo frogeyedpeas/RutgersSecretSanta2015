@@ -16,10 +16,13 @@ def mainpage():
 def getData():
 	print("I have the data!")
 	print(request.form['firstname']+'\n'+request.form['lastname'])
-	f = open('afile.txt','w')
-	f.write(str(request.form)+"\n")
+	f = open('afile.txt','r')
+	s = f.read()
 	f.close()
-	return render_template('index.html')
+	f = open('afile.txt','w')
+	f.write(s+str(request.form)+"\n")
+	f.close()
+	return mainpage()
 
 if __name__ == "__main__": #if you run this program, ACTIVATE! (so we can import this safely)
     app.run(debug=True, port=80) #port 80 means the default page. if it's not 80, say 5000 then we have to go to 127.0.0.1:5000 to make it work
