@@ -4,7 +4,7 @@
 		Secret Santa!
 	</head>
 	<body>
-		<form action="getData" method="post">
+		<form action="getData" method="get">
 			First Name:<br>
 			<input type="text" name="firstname">
 			<br>
@@ -27,6 +27,8 @@
 			<br>
 			Desired giftee:<br>
 			<input type="text" name="giftee">
+
+  		<button type="submit" formmethod="post" formaction="getData">Submit using POST</button>
 		</form>	
 	</body>
 </html>
